@@ -62,21 +62,19 @@ export default class App extends Component{
 
   async sendNotification(){
     
-    const FIREBASE_API_KEY = "AIzaSyCK7mopOZN4D4NbiR2kyH-4u5xQ86DPELA";
+     //const FIREBASE_API_KEY = "AIzaSyCK7mopOZN4D4NbiR2kyH-4u5xQ86DPELA";
+    const FIREBASE_API_KEY = "AAAA7z9ZhFQ:APA91bHjVPB2R3Ifb27Bvn73bC7s0ijYwAo2_3OYunTuXdF9_61fi5nrVsc3Or9V2Yklh57ZYUYgrG_xgrtlCAcC-oEYTwAKXkGp1NZmNTx-te2jzlSg4slpcs_HO6oQfySRwZbZoh_J";
     const message = {
-     to: "eKpHICzPLqE:APA91bHzsQUfiqTF1X0LH84TKReWkVOPf5X7lWolt4nsqs0leW9kjMPQ6-5olhoLjJghnfUKNrSNrz07XQ_xryZjo5-CK6i8W8Sd5oxEvs79ORv8Ju5zAxIpgdP3yz8QkopKVQsjuAT0", 
-    notification: {
-      title: "TCHOUTCHOU Notification",
-      body: "Test notification avec succès",
-      "vibrate": 1,
-      "sound": 1,
-      "show_in_foreground": true,
+      "to": "ezSyFQtlS4O4Flj2ml5RQ0:APA91bH8wInISQ_28m3E2iDhkOkLrZwLNe-9KqBe_6fSKQERzBPk2-8NJ6fb5SvO01xxF5NAUxUu_OVRB5ZvCv4CD5tPU0_f0sqa-iQ2Xs4-VJwfw0Wh2N_xgR8sGuAufACM-MDP64eA", 
+     "notification": {
+      "body" : "Test notification avec succèstryjrtjtyj",
+     "title" : "TCHOUTCHOU Notificationtyjtyjtyjj",
       "priority": "high",
-      "content_available": true
-  } 
+      "content_available": true 
+  }
   
 }
-   
+  // alert(data);
   let headers = new Headers({
     "Content-Type": "application/json",
     "Authorization": "key=" + FIREBASE_API_KEY
